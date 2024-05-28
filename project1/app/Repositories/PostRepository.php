@@ -28,6 +28,5 @@ class PostRepository implements PostInterface
     public function delete($id)
     {
         return Book::findOrFail($id)->delete();
-
     }
 }
