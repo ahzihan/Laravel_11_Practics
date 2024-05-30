@@ -15,4 +15,5 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/book', [BookController::class, 'BookList']);
+Route::get('/book', [BookController::class, 'index']);
+Route::get('/book/{id}', [BookController::class, 'show']);
