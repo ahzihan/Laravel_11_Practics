@@ -17,3 +17,4 @@ Route::get('/contact', function () {
 
 Route::get('/book', [BookController::class, 'index']);
 Route::get('/book/{id}', [BookController::class, 'show']);
+Route::get('/working-with-where', [BookController::class, 'workingWithWhere']);

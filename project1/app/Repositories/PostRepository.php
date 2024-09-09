@@ -29,4 +29,8 @@ class PostRepository implements PostInterface
     {
         return Book::findOrFail($id)->delete();
     }
+    public function workingWithWhere()
+    {
+        return Book::all();
+    }
 }
